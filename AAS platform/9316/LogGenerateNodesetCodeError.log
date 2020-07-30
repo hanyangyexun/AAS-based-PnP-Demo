@@ -1,0 +1,7 @@
+INFO:__main__:Preprocessing (existing) C:\WebGenesis\Developer912\AML2UA\base\apps\Aml2UAConvDialog\open62541\Opc.Ua.NodeSet2.xml
+INFO:__main__:Preprocessing C:\WebGenesis\Developer912\AML2UA\base\apps\Aml2UAConvDialog\open62541\Opc.Ua.AMLBaseTypes.NodeSet2.xml
+INFO:__main__:Preprocessing C:\WebGenesis\Developer912\AML2UA\data\contents\9316\pnpserver.xml
+INFO:__main__:Generating Code
+INFO:__main__:NodeSet generation code successfully printed
+
+
