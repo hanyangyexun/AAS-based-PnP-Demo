@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qsurf.aas">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/applogo3"
+        android:label="PnP AAS"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".view.activities.MainActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".view.activities.AASEcosystemLActivity"
+            android:theme="@style/AppTheme"
+            android:launchMode="singleTop"  android:screenOrientation="landscape" />
+
+        <activity android:name=".view.activities.AASEcosystemLActivity1"
+            android:theme="@style/AppTheme"
+            android:launchMode="singleTop"  android:screenOrientation="landscape" />
+
+        <activity android:name=".view.activities.AASEcosystemLActivity2"
+            android:theme="@style/AppTheme"
+            android:launchMode="singleTop"  android:screenOrientation="landscape" />
+
+        <activity android:name=".view.activities.AASTerminologyLActivity"
+            android:theme="@style/AppTheme"
+            android:launchMode="singleTop"  android:screenOrientation="landscape" />
+
+        <activity android:name=".view.activities.AASTerminologyLActivity1"
+            android:theme="@style/AppTheme"
+            android:launchMode="singleTop"  android:screenOrientation="landscape" />
+
+        <activity android:name=".view.activities.AASBrowserLActivity"
+            android:theme="@style/AppTheme"
+            android:launchMode="singleTop"  android:screenOrientation="landscape" />
+
+        <activity android:name=".view.activities.AASBrowserPActivity"
+            android:theme="@style/AppTheme"
+            android:launchMode="singleTop"  android:screenOrientation="landscape" />
+
+        <activity android:name=".view.activities.QRScanActivity"
+            android:theme="@style/AppTheme"
+            android:launchMode="singleTop"  android:screenOrientation="portrait" />
+
+        <activity android:name=".view.activities.QRCustomActivity"
+            android:theme="@style/AppTheme"
+            android:launchMode="singleTop"  android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>
