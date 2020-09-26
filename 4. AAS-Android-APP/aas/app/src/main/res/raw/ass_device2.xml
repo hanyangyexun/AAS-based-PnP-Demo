@@ -1,0 +1,17 @@
+<person>
+    <student>
+        <name>홍길동</name>
+        <age>30</age>
+        <address>서울</address>
+    </student>
+    <student>
+        <name>이순신</name>
+        <age>40</age>
+        <address>전라도</address>
+    </student>
+    <student>
+        <name>강감찬</name>
+        <age>50</age>
+        <address>경상도</address>
+    </student>
+</person>

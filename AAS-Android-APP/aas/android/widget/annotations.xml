@@ -1,8 +1,0 @@
-<root>
-    <item name='android.widget.ImageView'>
-        <annotation name='java.lang.Deprecated' />
-    </item>
-    <item name='android.widget.RelativeLayout'>
-        <annotation name='java.lang.Deprecated' />
-    </item>
-</root>

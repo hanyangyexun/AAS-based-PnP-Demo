@@ -1,1 +1,0 @@
-This folder contains source code in AAS platform (Nestfield gateway) layer, please upload your code here in a structural manner.

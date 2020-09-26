@@ -1,0 +1,874 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CAEXFile FileName="finalpnpserver_WithAggregationServer.aml" SchemaVersion="2.15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CAEX_ClassModel_V2.15.xsd">
+	<AdditionalInformation AutomationMLVersion="2.0" />
+	<AdditionalInformation>
+		<WriterHeader>
+			<WriterName>CAEXEditor</WriterName>
+			<WriterID>CAEXEditor20130613</WriterID>
+			<WriterVendor>Fraunhofer IOSB</WriterVendor>
+			<WriterVendorURL>www.mes.fraunhofer.de</WriterVendorURL>
+			<WriterVersion>2.2.15</WriterVersion>
+			<WriterRelease />
+			<LastWritingDateTime>2017-02-20T15:02:20.0500020+01:00</LastWritingDateTime>
+			<WriterProjectTitle />
+			<WriterProjectID />
+		</WriterHeader>
+	</AdditionalInformation>
+	<InstanceHierarchy Name="AAS in PnP Demo">
+		<Version>0.3.5</Version>
+		<InternalElement ID="65b425fa-0bdb-496e-a1ae-28171cea1fcd" Name="AAS_KUKA_Robot">
+			<Attribute Name="StartCommand" AttributeDataType="xs:string">
+				<Description>start/stop</Description>
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>3a6d6b22-9a1b-4959-a413-e581aa834e00</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=StartCommand</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="PositionX" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>3a6d6b22-9a1b-4959-a413-e581aa834e00</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=PositionDataX</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="PositionY" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>3a6d6b22-9a1b-4959-a413-e581aa834e00</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=PositionDataY</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="PositionZ" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>3a6d6b22-9a1b-4959-a413-e581aa834e00</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=PositionDataZ</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="PositionA" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>3a6d6b22-9a1b-4959-a413-e581aa834e00</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=PositionDataA</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="PositionB" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>3a6d6b22-9a1b-4959-a413-e581aa834e00</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=PositionDataB</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="PositionC" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>3a6d6b22-9a1b-4959-a413-e581aa834e00</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=PositionDataC</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="kuka_gripper">
+					<Attribute Name="RefDataSource">
+						<Value>3a6d6b22-9a1b-4959-a413-e581aa834e00</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=kuka_gripper</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="kuka_sensors">
+					<Attribute Name="RefDataSource">
+						<Value>3a6d6b22-9a1b-4959-a413-e581aa834e00</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=kuka_sensors</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="kuka_light">
+					<Attribute Name="RefDataSource">
+						<Value>3a6d6b22-9a1b-4959-a413-e581aa834e00</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=kuka_light</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="kuka_state" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>3a6d6b22-9a1b-4959-a413-e581aa834e00</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=kuka_state</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="table_to_kuka">
+					<Attribute Name="RefDataSource">
+						<Value>3a6d6b22-9a1b-4959-a413-e581aa834e00</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=table_to_kuka</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="AggregationServer-UA StartCommand" AttributeDataType="xs:string">
+				<Description>start/stop</Description>
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>9eb0747d-7185-41b4-9893-77e3ae5ba58f</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=65b425fa-0bdb-496e-a1ae-28171cea1fcd.StartCommand</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="AggregationServer-UA PositionX" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>9eb0747d-7185-41b4-9893-77e3ae5ba58f</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=65b425fa-0bdb-496e-a1ae-28171cea1fcd.PositionX</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="AggregationServer-UA PositionY" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>9eb0747d-7185-41b4-9893-77e3ae5ba58f</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=65b425fa-0bdb-496e-a1ae-28171cea1fcd.PositionY</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="AggregationServer-UA PositionZ" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>9eb0747d-7185-41b4-9893-77e3ae5ba58f</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=65b425fa-0bdb-496e-a1ae-28171cea1fcd.PositionZ</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="AggregationServer-UA PositionA" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>9eb0747d-7185-41b4-9893-77e3ae5ba58f</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=65b425fa-0bdb-496e-a1ae-28171cea1fcd.PositionA</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="AggregationServer-UA PositionB" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>9eb0747d-7185-41b4-9893-77e3ae5ba58f</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=65b425fa-0bdb-496e-a1ae-28171cea1fcd.PositionB</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="AggregationServer-UA PositionC" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>9eb0747d-7185-41b4-9893-77e3ae5ba58f</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=65b425fa-0bdb-496e-a1ae-28171cea1fcd.PositionC</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="AggregationServer-UA kuka_state" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>9eb0747d-7185-41b4-9893-77e3ae5ba58f</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=65b425fa-0bdb-496e-a1ae-28171cea1fcd.kuka_state</Value>
+					</Attribute>
+			</Attribute>
+		</InternalElement>
+		<InternalElement ID="5edaf471-ae3c-4854-bcc3-a9340f6da7c2" Name="AAS_Epson1_Robot">
+			<Attribute Name="StartCommand" AttributeDataType="xs:string">
+				<Description>start/stop</Description>
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>da51cded-5ec5-4112-bdee-526cb5f0113c</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=::EPSON_C4_Robot_Command:EPSON_C4_Start_Set</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="PositionX" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>da51cded-5ec5-4112-bdee-526cb5f0113c</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=::EPSON_C4_Robot_Monitoring:EPSON_C4_X_Data</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="PositionY" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>da51cded-5ec5-4112-bdee-526cb5f0113c</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=::EPSON_C4_Robot_Monitoring:EPSON_C4_Y_Data</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="PositionZ" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>da51cded-5ec5-4112-bdee-526cb5f0113c</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=::EPSON_C4_Robot_Monitoring:EPSON_C4_Z_Data</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="PositionU" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>da51cded-5ec5-4112-bdee-526cb5f0113c</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=::EPSON_C4_Robot_Monitoring:EPSON_C4_U_Data</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="PositionV" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>da51cded-5ec5-4112-bdee-526cb5f0113c</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=::EPSON_C4_Robot_Monitoring:EPSON_C4_V_Data</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="PositionW" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>da51cded-5ec5-4112-bdee-526cb5f0113c</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=::EPSON_C4_Robot_Monitoring:EPSON_C4_W_Data</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="epson1_gripper">
+					<Attribute Name="RefDataSource">
+						<Value>da51cded-5ec5-4112-bdee-526cb5f0113c</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=::EPSON_C4_Robot_Monitoring:EPSON_C4_Gripper_Status</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="epson1_sensors">
+					<Attribute Name="RefDataSource">
+						<Value>da51cded-5ec5-4112-bdee-526cb5f0113c</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=::EPSON_C4_Robot_Monitoring:EPSON_C4_SensorLR_Running_Status</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="epson1_light">
+					<Attribute Name="RefDataSource">
+						<Value>da51cded-5ec5-4112-bdee-526cb5f0113c</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=::EPSON_C4_Robot_Monitoring:EPSON_C4_Indicator_Light_Status</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="epson1_state" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>da51cded-5ec5-4112-bdee-526cb5f0113c</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=::EPSON_C4_Robot_Command:Epson_C4_Running_Status</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="table_to_epson1" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>da51cded-5ec5-4112-bdee-526cb5f0113c</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=::EPSON_C4_Robot_Monitoring:EPSON_C4_Turntable_Running_Status</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="AggregationServer-UA StartCommand" AttributeDataType="xs:string">
+				<Description>start/stop</Description>
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>9eb0747d-7185-41b4-9893-77e3ae5ba58f</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=5edaf471-ae3c-4854-bcc3-a9340f6da7c2.StartCommand</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="AggregationServer-UA PositionX" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>9eb0747d-7185-41b4-9893-77e3ae5ba58f</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=5edaf471-ae3c-4854-bcc3-a9340f6da7c2.PositionX</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="AggregationServer-UA PositionY" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>9eb0747d-7185-41b4-9893-77e3ae5ba58f</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=5edaf471-ae3c-4854-bcc3-a9340f6da7c2.PositionY</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="AggregationServer-UA PositionZ" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>9eb0747d-7185-41b4-9893-77e3ae5ba58f</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=5edaf471-ae3c-4854-bcc3-a9340f6da7c2.PositionZ</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="AggregationServer-UA PositionU" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>9eb0747d-7185-41b4-9893-77e3ae5ba58f</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=5edaf471-ae3c-4854-bcc3-a9340f6da7c2.PositionU</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="AggregationServer-UA PositionV" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>9eb0747d-7185-41b4-9893-77e3ae5ba58f</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=5edaf471-ae3c-4854-bcc3-a9340f6da7c2.PositionV</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="AggregationServer-UA PositionW" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>9eb0747d-7185-41b4-9893-77e3ae5ba58f</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=5edaf471-ae3c-4854-bcc3-a9340f6da7c2.PositionW</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="AggregationServer-UA epson1_state" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>9eb0747d-7185-41b4-9893-77e3ae5ba58f</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=5edaf471-ae3c-4854-bcc3-a9340f6da7c2.epson1_state</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="AggregationServer-UA table_to_epson1" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>9eb0747d-7185-41b4-9893-77e3ae5ba58f</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=5edaf471-ae3c-4854-bcc3-a9340f6da7c2.table_to_epson1</Value>
+					</Attribute>
+			</Attribute>
+		</InternalElement>
+		<InternalElement ID="d6a952c0-2c6c-4941-9c13-94177a3566f7" Name="AAS_Epson2_Robot">
+			<Attribute Name="StartCommand" AttributeDataType="xs:string">
+				<Description>start/stop</Description>
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>4936367c-364a-4ad9-b12e-fd1bd93600ad</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=::EPSON_SCARA_Robot_Command:EPSON_SCARA_Start_Set</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="PositionX" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>4936367c-364a-4ad9-b12e-fd1bd93600ad</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=::EPSON_SCARA_Robot_Monitoring:EPSON_SCARA_X_Data</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="PositionY" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>4936367c-364a-4ad9-b12e-fd1bd93600ad</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=::EPSON_SCARA_Robot_Monitoring:EPSON_SCARA_Y_Data</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="PositionZ" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>4936367c-364a-4ad9-b12e-fd1bd93600ad</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=::EPSON_SCARA_Robot_Monitoring:EPSON_SCARA_Z_Data</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="PositionU" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>da51cded-5ec5-4112-bdee-526cb5f0113c</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=::EPSON_SCARA_Robot_Monitoring:EPSON_SCARA_U_Data</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="PositionV" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>4936367c-364a-4ad9-b12e-fd1bd93600ad</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=::EPSON_SCARA_Robot_Monitoring:EPSON_SCARA_V_Data</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="epson2_gripper">
+					<Attribute Name="RefDataSource">
+						<Value>4936367c-364a-4ad9-b12e-fd1bd93600ad</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=::EPSON_SCARA_Robot_Monitoring:EPSON_SCARA_Gripper_Status</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="epson2_sensors">
+					<Attribute Name="RefDataSource">
+						<Value>4936367c-364a-4ad9-b12e-fd1bd93600ad</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=::EPSON_SCARA_Robot_Monitoring:EPSON_SCARA_SensorLR_Running_Status</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="epson2_light">
+					<Attribute Name="RefDataSource">
+						<Value>4936367c-364a-4ad9-b12e-fd1bd93600ad</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=::EPSON_SCARA_Robot_Monitoring:EPSON_SCARA_Indicator_Light_Status</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="epson2_state" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>4936367c-364a-4ad9-b12e-fd1bd93600ad</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=::EPSON_SCARA_Robot_Command:Epson_SCARA_Running_Status</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="table_to_epson2" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>4936367c-364a-4ad9-b12e-fd1bd93600ad</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=::EPSON_SCARA_Robot_Monitoring:EPSON_SCARA_Turntable_Running_Status</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="AggregationServer-UA StartCommand" AttributeDataType="xs:string">
+				<Description>start/stop</Description>
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>9eb0747d-7185-41b4-9893-77e3ae5ba58f</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=d6a952c0-2c6c-4941-9c13-94177a3566f7.StartCommand</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="AggregationServer-UA PositionX" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>9eb0747d-7185-41b4-9893-77e3ae5ba58f</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=d6a952c0-2c6c-4941-9c13-94177a3566f7.PositionX</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="AggregationServer-UA PositionY" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>9eb0747d-7185-41b4-9893-77e3ae5ba58f</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=d6a952c0-2c6c-4941-9c13-94177a3566f7.PositionY</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="AggregationServer-UA PositionZ" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>9eb0747d-7185-41b4-9893-77e3ae5ba58f</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=d6a952c0-2c6c-4941-9c13-94177a3566f7.PositionZ</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="AggregationServer-UA PositionU" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>9eb0747d-7185-41b4-9893-77e3ae5ba58f</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=d6a952c0-2c6c-4941-9c13-94177a3566f7.PositionU</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="AggregationServer-UA PositionV" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>9eb0747d-7185-41b4-9893-77e3ae5ba58f</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=d6a952c0-2c6c-4941-9c13-94177a3566f7.PositionV</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="AggregationServer-UA epson2_state" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>9eb0747d-7185-41b4-9893-77e3ae5ba58f</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=d6a952c0-2c6c-4941-9c13-94177a3566f7.epson2_state</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="AggregationServer-UA table_to_epson2" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>9eb0747d-7185-41b4-9893-77e3ae5ba58f</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=d6a952c0-2c6c-4941-9c13-94177a3566f7.table_to_epson2</Value>
+					</Attribute>
+			</Attribute>
+		</InternalElement>
+		<InternalElement ID="0a04cce4-a64a-4566-b916-06a8639d7dcd" Name="AAS_Rotation_Table">
+			<Attribute Name="PLC_Start" AttributeDataType="xs:string">
+				<Description>start/stop</Description>
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>d5a1d4da-8afb-44d4-a28f-438bfd2f2fc9</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=6;s=::Program2:PLC_Start_Set</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="kuka_to_table" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>d5a1d4da-8afb-44d4-a28f-438bfd2f2fc9</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=6;s=::Program2:Kuka_Status</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="epson1_to_table" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>d5a1d4da-8afb-44d4-a28f-438bfd2f2fc9</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=6;s=::Program2:Epson1_Status</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="epson2_to_table" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>d5a1d4da-8afb-44d4-a28f-438bfd2f2fc9</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=6;s=::Program2:Epson2_Status</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="table_to_kuka" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>d5a1d4da-8afb-44d4-a28f-438bfd2f2fc9</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=6;s=::Program2:PLC_Kuka_Status</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="table_to_epson1" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>d5a1d4da-8afb-44d4-a28f-438bfd2f2fc9</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=6;s=::Program2:PLC_Epson1_Status</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="table_to_epson2" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>d5a1d4da-8afb-44d4-a28f-438bfd2f2fc9</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=6;s=::Program2:PLC_Epson2_Status</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="table_to_UI">
+					<Attribute Name="RefDataSource">
+						<Value>d5a1d4da-8afb-44d4-a28f-438bfd2f2fc9</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=6;s=::Program2:PLC_Table_State</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="AggregationServer-UA PLC_Start" AttributeDataType="xs:string">
+				<Description>start/stop</Description>
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>9eb0747d-7185-41b4-9893-77e3ae5ba58f</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=0a04cce4-a64a-4566-b916-06a8639d7dcd.PLC_Start</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="AggregationServer-UA kuka_to_table" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>9eb0747d-7185-41b4-9893-77e3ae5ba58f</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=0a04cce4-a64a-4566-b916-06a8639d7dcd.kuka_to_table</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="AggregationServer-UA epson1_to_table" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>9eb0747d-7185-41b4-9893-77e3ae5ba58f</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=0a04cce4-a64a-4566-b916-06a8639d7dcd.epson1_to_table</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="AggregationServer-UA epson2_to_table" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>9eb0747d-7185-41b4-9893-77e3ae5ba58f</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=0a04cce4-a64a-4566-b916-06a8639d7dcd.epson2_to_table</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="AggregationServer-UA table_to_kuka" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>9eb0747d-7185-41b4-9893-77e3ae5ba58f</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=0a04cce4-a64a-4566-b916-06a8639d7dcd.table_to_kuka</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="AggregationServer-UA table_to_epson1" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>9eb0747d-7185-41b4-9893-77e3ae5ba58f</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=0a04cce4-a64a-4566-b916-06a8639d7dcd.table_to_epson1</Value>
+					</Attribute>
+			</Attribute>
+			<Attribute Name="AggregationServer-UA table_to_epson2" AttributeDataType="xs:string">
+				<RefSemantic CorrespondingAttributePath="aml-dataSourceType:OPCUA" />
+					<Attribute Name="RefDataSource">
+						<Value>9eb0747d-7185-41b4-9893-77e3ae5ba58f</Value>
+					</Attribute>
+					<Attribute Name="NodeId">
+						<Value>ns=1;s=0a04cce4-a64a-4566-b916-06a8639d7dcd.table_to_epson2</Value>
+					</Attribute>
+			</Attribute>
+		</InternalElement>
+		<InternalElement ID="3a6d6b22-9a1b-4959-a413-e581aa834e00" Name="KUAK OPC UA Server">
+			<Attribute Name="DiscoveryURL" AttributeDataType="xs:anyURI">
+				<Value>opc.tcp://192.168.0.177:4841</Value>
+			</Attribute>
+			<RoleRequirements RefBaseRoleClassPath="DataVariableRoleClassLib/DataSource/OPCUA-Server" />
+		</InternalElement>
+		<InternalElement ID="da51cded-5ec5-4112-bdee-526cb5f0113c" Name="Epson 1 OPC UA Server">
+			<Attribute Name="DiscoveryURL" AttributeDataType="xs:anyURI">
+				<Value>opc.tcp://192.168.0.42:4842</Value>
+			</Attribute>
+			<RoleRequirements RefBaseRoleClassPath="DataVariableRoleClassLib/DataSource/OPCUA-Server" />
+		</InternalElement>
+		<InternalElement ID="4936367c-364a-4ad9-b12e-fd1bd93600ad" Name="Epson 2 OPC UA Server">
+			<Attribute Name="DiscoveryURL" AttributeDataType="xs:anyURI">
+				<Value>opc.tcp://192.168.0.43:4843</Value>
+			</Attribute>
+			<RoleRequirements RefBaseRoleClassPath="DataVariableRoleClassLib/DataSource/OPCUA-Server" />
+		</InternalElement>
+		<InternalElement ID="d5a1d4da-8afb-44d4-a28f-438bfd2f2fc9" Name="Table OPC UA Server">
+			<Attribute Name="DiscoveryURL" AttributeDataType="xs:anyURI">
+				<Value>opc.tcp://192.168.0.44:4844</Value>
+			</Attribute>
+			<RoleRequirements RefBaseRoleClassPath="DataVariableRoleClassLib/DataSource/OPCUA-Server" />
+		</InternalElement>
+	</InstanceHierarchy>
+	<InstanceHierarchy Name="AML2UA_AggregationServer">
+		<InternalElement ID="9eb0747d-7185-41b4-9893-77e3ae5ba58f" Name="UA Server finalpnpserver">
+			<Attribute Name="DiscoveryURL">
+				<Description>Change this DiscoveryURL here, to the used server URL when launching.</Description>
+				<Value>opc.tcp://localhost:16664</Value>
+			</Attribute>
+			<Attribute Name="NameSpaceTable">
+					<Attribute Name="1">
+						<Value>http://www.iosb.fraunhofer.de/finalpnpserver.aml</Value>
+					</Attribute>
+					<Attribute Name="2">
+						<Value>http://opcfoundation.org/UA/AML/</Value>
+					</Attribute>
+			</Attribute>
+			<RoleRequirements RefBaseRoleClassPath="DataVariableRoleClassLib/DataSource/OPCUA-Server" />
+		</InternalElement>
+	</InstanceHierarchy>
+	<InterfaceClassLib Name="AutomationMLInterfaceClassLib">
+		<Description>Standard Automation Markup Language Interface Class Library</Description>
+		<Version>2.2.0</Version>
+		<InterfaceClass Name="AutomationMLBaseInterface">
+			<InterfaceClass Name="Order" RefBaseClassPath="AutomationMLBaseInterface">
+				<Attribute Name="Direction" AttributeDataType="xs:string" />
+			</InterfaceClass>
+			<InterfaceClass Name="PortConnector" RefBaseClassPath="AutomationMLBaseInterface" />
+			<InterfaceClass Name="InterlockingConnector" RefBaseClassPath="AutomationMLBaseInterface" />
+			<InterfaceClass Name="PPRConnector" RefBaseClassPath="AutomationMLBaseInterface" />
+			<InterfaceClass Name="ExternalDataConnector" RefBaseClassPath="AutomationMLBaseInterface">
+				<Attribute Name="refURI" AttributeDataType="xs:anyURI" />
+				<InterfaceClass Name="COLLADAInterface" RefBaseClassPath="ExternalDataConnector" />
+				<InterfaceClass Name="PLCopenXMLInterface" RefBaseClassPath="ExternalDataConnector" />
+			</InterfaceClass>
+			<InterfaceClass Name="Communication" RefBaseClassPath="AutomationMLBaseInterface">
+				<InterfaceClass Name="SignalInterface" RefBaseClassPath="Communication" />
+			</InterfaceClass>
+		</InterfaceClass>
+	</InterfaceClassLib>
+	<RoleClassLib Name="AutomationMLBaseRoleClassLib">
+		<Description>Automation Markup Language base role class library</Description>
+		<Version>2.2.0</Version>
+		<RoleClass Name="AutomationMLBaseRole">
+			<RoleClass Name="Group" RefBaseClassPath="AutomationMLBaseRole">
+				<Attribute Name="AssociatedFacet" AttributeDataType="xs:string" />
+			</RoleClass>
+			<RoleClass Name="Facet" RefBaseClassPath="AutomationMLBaseRole" />
+			<RoleClass Name="Port" RefBaseClassPath="AutomationMLBaseRole">
+				<Attribute Name="Direction" AttributeDataType="xs:string" />
+				<Attribute Name="Cardinality">
+						<Attribute Name="MinOccur" AttributeDataType="xs:unsignedInt" />
+						<Attribute Name="MaxOccur" AttributeDataType="xs:unsignedInt" />
+				</Attribute>
+				<Attribute Name="Category" AttributeDataType="xs:string" />
+				<ExternalInterface ID="9942bd9c-c19d-44e4-a197-11b9edf264e7" Name="ConnectionPoint" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PortConnector" />
+			</RoleClass>
+			<RoleClass Name="Resource" RefBaseClassPath="AutomationMLBaseRole" />
+			<RoleClass Name="Product" RefBaseClassPath="AutomationMLBaseRole" />
+			<RoleClass Name="Process" RefBaseClassPath="AutomationMLBaseRole" />
+			<RoleClass Name="Structure" RefBaseClassPath="AutomationMLBaseRole">
+				<RoleClass Name="ProductStructure" RefBaseClassPath="Structure" />
+				<RoleClass Name="ProcessStructure" RefBaseClassPath="Structure" />
+				<RoleClass Name="ResourceStructure" RefBaseClassPath="Structure" />
+			</RoleClass>
+			<RoleClass Name="PropertySet" RefBaseClassPath="AutomationMLBaseRole" />
+		</RoleClass>
+	</RoleClassLib>
+	<RoleClassLib Name="DataVariableRoleClassLib">
+		<Version>0.2.4</Version>
+		<RoleClass Name="DataSource" RefBaseClassPath="CommunicationRoleClassLib/LogicalDevice">
+			<Version>0.1</Version>
+			<RoleClass Name="OPCUA-Server" RefBaseClassPath="DataVariableRoleClassLib/DataSource">
+				<Version>0.1</Version>
+				<Attribute Name="DiscoveryURL" AttributeDataType="xs:anyURI">
+					<Description>If this attribute is given all others except of the namespace table are obsolet.</Description>
+				</Attribute>
+				<Attribute Name="EndpointURL" AttributeDataType="xs:anyURI" />
+				<Attribute Name="TransportProfileURI" AttributeDataType="xs:anyURI" />
+				<Attribute Name="SecurityPolicy" />
+				<Attribute Name="MessageSecurityMode" />
+				<Attribute Name="UserToken" />
+				<Attribute Name="NameSpaceTable">
+						<Attribute Name="0" AttributeDataType="xs:anyURI">
+							<Value>http://opcfoundation.org/UA/</Value>
+						</Attribute>
+				</Attribute>
+			</RoleClass>
+			<RoleClass Name="iTOT-Client" RefBaseClassPath="DataVariableRoleClassLib/DataSource">
+				<Version>0.1</Version>
+				<Attribute Name="Host" />
+				<Attribute Name="Port" AttributeDataType="xs:unsignedInt" />
+				<Attribute Name="ReconnectTimeout" Unit="sec" AttributeDataType="xs:double" />
+				<Attribute Name="KeepAlive" AttributeDataType="xs:boolean">
+					<DefaultValue>FALSE</DefaultValue>
+				</Attribute>
+				<Attribute Name="NoDelay" AttributeDataType="xs:boolean">
+					<DefaultValue>FALSE</DefaultValue>
+				</Attribute>
+				<Attribute Name="PLCType">
+					<Description>(S7-1200)</Description>
+				</Attribute>
+				<Attribute Name="Priority" AttributeDataType="xs:unsignedInt" />
+				<Attribute Name="QueueSize" AttributeDataType="xs:unsignedInt" />
+				<Attribute Name="WriteQueueSize" Unit="Bytes" AttributeDataType="xs:unsignedInt" />
+				<RoleClass Name="iTOT-DataBlock" RefBaseClassPath="DataVariableRoleClassLib/DataSource">
+					<Version>0.1</Version>
+					<Attribute Name="DBName" />
+					<Attribute Name="Type">
+						<Constraint Name="InputOrOutput">
+							<NominalScaledType>
+								<RequiredValue>Input</RequiredValue>
+								<RequiredValue>Output</RequiredValue>
+							</NominalScaledType>
+						</Constraint>
+					</Attribute>
+					<Attribute Name="RegisterNumber" AttributeDataType="xs:unsignedInt">
+						<Description>Optional</Description>
+					</Attribute>
+					<Attribute Name="LocalEventList">
+						<Description>optional</Description>
+					</Attribute>
+					<Attribute Name="DBBaustein" AttributeDataType="xs:unsignedInt">
+						<Description>Optional</Description>
+					</Attribute>
+					<Attribute Name="RefDataSource" />
+				</RoleClass>
+			</RoleClass>
+			<RoleClass Name="CanBus" RefBaseClassPath="DataVariableRoleClassLib/DataSource">
+				<Version>0.1</Version>
+				<Attribute Name="DeviceName" />
+				<Attribute Name="Baudrate" />
+			</RoleClass>
+			<RoleClass Name="ProfinetHost" RefBaseClassPath="DataVariableRoleClassLib/DataSource">
+				<Version>0.1</Version>
+			</RoleClass>
+			<RoleClass Name="ModbusTCPHost" RefBaseClassPath="DataVariableRoleClassLib/DataSource">
+				<Version>0.1</Version>
+			</RoleClass>
+			<RoleClass Name="IOLink" RefBaseClassPath="DataVariableRoleClassLib/DataSource">
+				<Version>0.1</Version>
+			</RoleClass>
+			<RoleClass Name="EthernetIP" RefBaseClassPath="DataVariableRoleClassLib/DataSource">
+				<Version>0.1</Version>
+			</RoleClass>
+			<RoleClass Name="MTConnect" RefBaseClassPath="DataVariableRoleClassLib/DataSource">
+				<Version>0.1</Version>
+			</RoleClass>
+			<RoleClass Name="CCLink" RefBaseClassPath="DataVariableRoleClassLib/DataSource">
+				<Version>0.1</Version>
+			</RoleClass>
+		</RoleClass>
+	</RoleClassLib>
+</CAEXFile>

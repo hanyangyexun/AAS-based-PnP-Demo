@@ -1,1 +1,0 @@
-This folder contains source code in Cloud layer, please upload your code here in a structural manner.

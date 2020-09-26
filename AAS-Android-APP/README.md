@@ -1,1 +1,0 @@
-This folder contains source code of current AAS APP, YeXun is in charge of this.
