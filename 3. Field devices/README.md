@@ -6,6 +6,8 @@ The detailed control process for example for kuka robot was shown in the followi
 
 <br/>
 
+<div align=center><img src="https://raw.githubusercontent.com/hanyangyexun/AAS-based-PnP-Demo/master/kuka_robot_control_process.png" width="%" height="" /></div>
+
 With regard to I4.0-ready asset layer, hardware includes TSN talker, TSN listener, kuka controller, and kuka manipulator. (TSN control for robot will be introduced in other GitHub repository.)
 
 The control process for other two Epson robots are similar with that of the kuka robot.
